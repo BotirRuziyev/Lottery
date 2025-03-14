@@ -1,0 +1,12 @@
+// mixins
+@import "./mixins";
+// variables
+@import "./globals";
+// components
+@import "./components/button";
+@import "./components/block-title";
+// layouts
+@import "./layouts/header";
+@import "./layouts/footer";
+// pages
+@import "./pages/home";

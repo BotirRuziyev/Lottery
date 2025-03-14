@@ -1,0 +1,14 @@
+.block-title {
+    margin-bottom: 50px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: #fff;
+    @include responsive(sm) {
+        margin-bottom: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+}

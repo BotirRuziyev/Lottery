@@ -1,0 +1,829 @@
+.conpany-about__marque {
+    height: 28px;
+    background: linear-gradient(90deg, #f2c202 0%, #5c3502 100%);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+    @include responsive(sm) {
+        background: #dc3600;
+        height: 20px;
+        font-size: 9px;
+    }
+}
+
+// home
+.home {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 580px 20px 0;
+    @include responsive(xl) {
+        padding: 320px 20px 0;
+    }
+    // &::after {
+    //     content: "";
+    //     width: 100vw;
+    //     height: 3000px;
+    //     background: url("/public/img/home-bg.webp") no-repeat;
+    //     background-size: 3793px;
+    //     background-position: calc(50% + 200px) -25px;
+    //     position: absolute;
+    //     top: -656px;
+    //     left: calc(50%);
+    //     transform: translateX(-50%);
+    //     @include responsive(xl) {
+    //     }
+    //     @include responsive(sm) {
+    //         display: none;
+    //     }
+    // }
+    &-in {
+        z-index: 3;
+    }
+    &-title {
+        max-width: 620px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #fff;
+        @include responsive(sm) {
+            max-width: 280px;
+            font-size: 25px;
+        }
+    }
+    &-time__left {
+        margin-bottom: 40px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #fff;
+        @include responsive(sm) {
+            margin-bottom: 30px;
+        }
+    }
+    .participate-now__btn {
+        max-width: 170px;
+        color: #000;
+        &:hover {
+            .arrown-icon {
+                img {
+                    filter: brightness(0) saturate(100%) invert(92%) sepia(0%) saturate(7468%) hue-rotate(144deg)
+                        brightness(107%) contrast(108%);
+                }
+            }
+        }
+        .arrown-icon {
+            img {
+                filter: brightness(0) saturate(100%) invert(0%) sepia(3%) saturate(23%) hue-rotate(329deg)
+                    brightness(103%) contrast(101%);
+                transition: 0.3s;
+            }
+        }
+    }
+    &-cube {
+        top: 0;
+        left: 0;
+        z-index: 2;
+        .left-top {
+            top: 164px;
+            left: 52px;
+            @include responsive(sm) {
+                top: 288px;
+                left: -4px;
+            }
+            img {
+                @include responsive(lg) {
+                    height: 40px;
+                }
+                @include responsive(sm) {
+                    height: 18px;
+                }
+            }
+        }
+        .left-center {
+            top: 356px;
+            left: -60px;
+            img {
+                @include responsive(lg) {
+                    height: 100px;
+                }
+            }
+        }
+        .left-bottom {
+            left: 120px;
+            top: 600px;
+            @include responsive(sm) {
+                top: 405px;
+                left: -10px;
+            }
+            img {
+                @include responsive(lg) {
+                    height: 25px;
+                }
+                @include responsive(sm) {
+                    height: 28px;
+                }
+            }
+        }
+        .right-top {
+            top: 172px;
+            right: 21px;
+            @include responsive(sm) {
+                top: 322px;
+                right: -20px;
+            }
+            img {
+                @include responsive(lg) {
+                    height: 60px;
+                }
+                @include responsive(sm) {
+                    height: 25px;
+                }
+            }
+        }
+        .right-center {
+            top: 377px;
+            right: -16px;
+            img {
+                @include responsive(lg) {
+                    height: 50px;
+                }
+            }
+        }
+        .right-bottom {
+            right: 12px;
+            top: 535px;
+            @include responsive(sm) {
+                top: 397px;
+                right: -9px;
+            }
+            img {
+                @include responsive(lg) {
+                    height: 70px;
+                }
+                @include responsive(lg) {
+                    height: 26px;
+                }
+            }
+        }
+    }
+    .block-bg {
+        .left-bg,
+        .left-two-bg {
+            width: 1246px;
+            height: 1193px;
+            top: calc(100% + 355px);
+            left: -466px;
+            border-radius: 100%;
+            background-color: #300303;
+            filter: blur(610.7999877929688px);
+            opacity: 0.1;
+        }
+        .left-two-bg {
+            top: calc(100% + 443px);
+            left: -492px;
+        }
+        .bottom-bg {
+            width: 1406px;
+            height: 838px;
+            top: calc(100% - 30px);
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 100%;
+            background-color: #030330;
+            filter: blur(300px);
+            opacity: 0.2;
+            z-index: 1;
+        }
+        .right-bg {
+            width: 1246px;
+            height: 1193px;
+            bottom: -770px;
+            right: -511px;
+            border-radius: 100%;
+            background-color: #300303;
+            filter: blur(610.7999877929688px);
+        }
+        .right-bottom-bg {
+            width: 597px;
+            height: 1221px;
+            top: calc(100% + 384px);
+            right: -342px;
+            border-radius: 100%;
+            background-color: #721515;
+            filter: blur(610.7999877929688px);
+        }
+    }
+}
+// home
+
+// super prizes
+.super-prizes {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 145px;
+    z-index: 1;
+    @include responsive(sm) {
+        padding-top: 100px;
+    }
+    .block-title {
+        text-align: center;
+    }
+    &__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-bottom: 50px;
+        @include responsive(xl) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        @include responsive(md) {
+            grid-template-columns: repeat(1, 1fr);
+            margin-bottom: 30px;
+        }
+        .super-prizes__card {
+            backdrop-filter: blur(59.70000076293945px);
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 15px;
+            gap: 50px;
+            overflow: hidden;
+            transition: 0.3s;
+            @include responsive(sm) {
+                gap: 30px;
+            }
+            &:hover {
+                background: rgba(255, 255, 255, 0.05);
+                box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.05);
+                transform: scale(1.02);
+            }
+            &:nth-child(2) {
+                .card-img {
+                    padding-top: 53px;
+                }
+            }
+            &:nth-child(3) {
+                .card-img {
+                    padding-top: 48px;
+                }
+            }
+            .card-img {
+                height: 100%;
+                padding: 67px 30px 0;
+                @include responsive(xl) {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                @include responsive(sm) {
+                    padding: 30px 20px 0;
+                }
+                img {
+                    max-width: 100%;
+                    @include responsive(sm) {
+                        max-height: 139px;
+                    }
+                }
+                &::after {
+                    content: "";
+                    max-width: 420px;
+                    width: 100%;
+                    height: 236px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-image: url("/public/img/pngwing.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    z-index: -1;
+                    @include responsive(md) {
+                        display: none;
+                    }
+                }
+            }
+            .card-body {
+                z-index: 2;
+                padding: 0 30px 30px;
+                gap: 15px;
+                @include responsive(xl) {
+                    padding: 0 20px 20px;
+                }
+                @include responsive(sm) {
+                    padding: 0 20px 20px;
+                    flex-wrap: wrap;
+                    justify-content: center !important;
+                }
+                .product-name {
+                    margin-bottom: 5px;
+                    font-family: var(--font-family);
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    letter-spacing: 0.05em;
+                    color: #fff;
+                }
+                .product-ends {
+                    font-family: var(--font-family);
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 150%;
+                    letter-spacing: 0.05em;
+                    color: #fff;
+                    opacity: 0.7;
+                }
+                .button {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    &__cube {
+        top: 0;
+        z-index: 3;
+        overflow: hidden;
+        .right-top {
+            left: 27px;
+            bottom: 11px;
+            z-index: 3;
+        }
+        .right-center {
+            right: 23px;
+            bottom: -30px;
+            z-index: 3;
+        }
+    }
+}
+// super prizes
+
+// lottery packages
+.lottery-packages {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 150px;
+    @include responsive(sm) {
+        padding-top: 100px;
+    }
+    .main-container {
+        z-index: 2;
+    }
+    &__in {
+        padding: 80px 45px 67px;
+        backdrop-filter: blur(59.70000076293945px);
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 15px;
+        @include responsive(xl) {
+            padding: 60px 24px 40px;
+        }
+        @include responsive(sm) {
+            padding: 55px 24px;
+        }
+        .lottery-packages__list {
+            gap: 50px;
+            margin-bottom: 50px;
+            @include responsive(xl) {
+                gap: 40px;
+            }
+            @include responsive(md) {
+                gap: 50px;
+            }
+            .lottery-packages__card {
+                gap: 40px;
+                @include responsive(xl) {
+                    gap: 30px;
+                }
+                .card-img {
+                    img {
+                        @include responsive(md) {
+                            max-width: 251px;
+                        }
+                    }
+                }
+                .card-body {
+                    .product-title {
+                        margin-bottom: 15px;
+                        font-family: var(--font-family);
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 140%;
+                        letter-spacing: 0.05em;
+                        color: #fff;
+                    }
+                    .product-description {
+                        margin-bottom: 15px;
+                        font-family: var(--font-family);
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 180%;
+                        letter-spacing: 0.05em;
+                        color: #fff;
+                        opacity: 0.7;
+                    }
+                    .product-price {
+                        margin-bottom: 30px;
+                        font-family: var(--font-family);
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 140%;
+                        letter-spacing: 0.05em;
+                        color: #fff;
+                    }
+                    .buy-btn {
+                        margin: 0;
+                        @include responsive(sm) {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__cube {
+        top: 0;
+        z-index: 3;
+        overflow: hidden;
+        .right-top {
+            top: 127px;
+            right: 135px;
+            @include responsive(sm) {
+                top: auto;
+                bottom: 110px;
+                left: 25px;
+                z-index: 3;
+            }
+            img {
+                @include responsive(sm) {
+                    height: 19px;
+                }
+            }
+        }
+        .right-center {
+            right: -43px;
+            bottom: 260px;
+            @include responsive(sm) {
+                top: auto;
+                bottom: 16px;
+                right: 6px;
+                z-index: 3;
+            }
+            img {
+                @include responsive(sm) {
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
+// lottery packages
+
+// previous winners
+.previous-winners {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 150px;
+    @include responsive(sm) {
+        padding-top: 100px;
+    }
+    .main-container {
+        z-index: 2;
+    }
+    &__cards {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin-bottom: 50px;
+        @include responsive(lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include responsive(sm) {
+            margin-bottom: 30px;
+        }
+        @media (max-width: 500px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .previous-winners__card {
+            padding: 35px 30px 25px;
+            backdrop-filter: blur(59.70000076293945px);
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 15px;
+            transition: 0.3s;
+            @include responsive(sm) {
+                padding: 35px 35px 26px;
+            }
+            &:hover {
+                background: rgba(255, 255, 255, 0.05);
+                box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.05);
+                transform: scale(1.02);
+            }
+            .card-img {
+                border-radius: 15px;
+                overflow: hidden;
+                margin-bottom: 24px;
+                img {
+                    width: 100%;
+                }
+            }
+            .card-body {
+                .user-info {
+                    margin-bottom: 8px;
+                    font-family: var(--font-family);
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 140%;
+                    letter-spacing: 0.05em;
+                    color: #fff;
+                }
+                .card-won {
+                    margin-bottom: 25px;
+                    font-family: var(--font-family);
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 150%;
+                    letter-spacing: 0.1em;
+                    color: #fff;
+                    opacity: 0.7;
+                }
+                .card-button {
+                    .button {
+                        gap: 20px;
+                    }
+                    .details-btn {
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+        }
+    }
+    &__cube {
+        top: 0;
+        z-index: 1;
+        .left-top {
+            left: 43px;
+            bottom: 140px;
+            @include responsive(sm) {
+                left: auto;
+                right: 6px;
+                bottom: 1057px;
+                z-index: 3;
+            }
+            img {
+                @include responsive(sm) {
+                    height: 32px;
+                }
+            }
+        }
+        .left-center {
+            left: 45px;
+            bottom: -63px;
+            @include responsive(sm) {
+                left: 25px;
+                bottom: 1145px;
+                z-index: 3;
+            }
+            img {
+                @include responsive(sm) {
+                    height: 19px;
+                }
+            }
+        }
+    }
+}
+// previous winners
+
+// interesting
+.interesting {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 150px;
+    @include responsive(sm) {
+        padding-top: 100px;
+    }
+    &-cards {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        @include responsive(lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 500px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .card-item {
+            backdrop-filter: blur(59.70000076293945px);
+            background: rgba(255, 255, 255, 0.02);
+            padding: 35px 30px;
+            border-radius: 15px;
+            transition: 0.3s;
+            @include responsive(sm) {
+                padding: 35px 34px;
+            }
+            &:hover {
+                background: rgba(255, 255, 255, 0.05);
+                box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.05);
+                transform: scale(1.02);
+            }
+            .card-title {
+                max-width: 213px;
+                margin-bottom: 15px;
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 160%;
+                letter-spacing: 0.05em;
+                color: #fff;
+                @include responsive(sm) {
+                    margin: 0 auto;
+                    margin-bottom: 15px;
+                }
+            }
+            .card-description {
+                margin-bottom: 20px;
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 180%;
+                letter-spacing: 0.05em;
+                color: #fff;
+                opacity: 0.7;
+            }
+            .more-btn {
+                gap: 20px;
+            }
+        }
+    }
+}
+// interesting
+
+// previous winners
+.instant-lotteries {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 150px;
+    @include responsive(sm) {
+        padding-top: 100px;
+    }
+    .main-container {
+        z-index: 2;
+    }
+    &__cards {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin-bottom: 50px;
+        @include responsive(lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 500px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .instant-lotteries__card {
+            padding: 35px 30px 25px;
+            backdrop-filter: blur(59.70000076293945px);
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 15px;
+            transition: 0.3s;
+            &:hover {
+                background: rgba(255, 255, 255, 0.05);
+                box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.05);
+                transform: scale(1.02);
+            }
+            .card-img {
+                border-radius: 15px;
+                overflow: hidden;
+                margin-bottom: 24px;
+                img {
+                    width: 100%;
+                }
+            }
+            .card-body {
+                .user-info {
+                    margin-bottom: 8px;
+                    font-family: var(--font-family);
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 140%;
+                    letter-spacing: 0.05em;
+                    color: #fff;
+                }
+                .card-price {
+                    margin-bottom: 15px;
+                    font-family: var(--font-family);
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 160%;
+                    letter-spacing: 0.05em;
+                    color: #fff;
+                }
+                .card-button {
+                    .details-btn {
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+        }
+    }
+    &__cube {
+        top: 0;
+        z-index: 1;
+        .left-top {
+            left: 33px;
+            bottom: 52px;
+            @include responsive(sm) {
+                top: 30px;
+                left: -14px;
+                z-index: 3;
+            }
+            img {
+                @include responsive(sm) {
+                    height: 25px;
+                }
+            }
+        }
+        .left-center {
+            left: 45px;
+            bottom: -148px;
+            @include responsive(sm) {
+                z-index: 3;
+            }
+        }
+        .right-top {
+            right: 0;
+            bottom: -65px;
+            @include responsive(sm) {
+                top: 106px;
+                left: 14px;
+                z-index: 3;
+            }
+            img {
+                @include responsive(sm) {
+                    height: 27px;
+                }
+            }
+        }
+        .right-center {
+            right: 45px;
+            bottom: -275px;
+            @include responsive(sm) {
+                top: 50px;
+                right: 12px;
+                z-index: 3;
+            }
+            img {
+                @include responsive(sm) {
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+// previous winners
+
+// featured press and our partners
+.featured-press,
+.our-partners {
+    padding-top: 150px;
+    @include responsive(sm) {
+        padding-top: 100px;
+    }
+    .swiper {
+        margin-bottom: 20px;
+        &-slide {
+            height: 80px;
+            backdrop-filter: blur(59.70000076293945px);
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+            img {
+                max-width: calc(100% - 30px);
+            }
+            &:hover {
+                background: rgba(255, 255, 255, 0.05);
+                transform: scale(1.02);
+            }
+        }
+    }
+    .swiper-pagination {
+        height: 10px;
+        line-height: 0;
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background-color: #0c0616;
+            border: 1px solid #ffffff10;
+            margin: 0 7.5px;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #f96839;
+            border-color: #f96839;
+        }
+    }
+}
+// featured press
